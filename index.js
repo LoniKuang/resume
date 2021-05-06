@@ -1,4 +1,9 @@
-var element = document.querySelector("#top");
-
-// smooth scroll to element and align it at the bottom
-element.scrollIntoView({ behavior: 'smooth', block: 'end'});
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
