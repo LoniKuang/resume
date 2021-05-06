@@ -1,0 +1,176 @@
+  * {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+	-moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+body {
+  background:#F0E5E1;
+  margin: 0;
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+}
+
+h2{
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 0;
+}
+
+.header{
+  padding: 0px 100px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bigheading{
+  margin: 0px;
+  font-size: 40px;
+  letter-spacing: 20px;
+}
+
+.btn{
+    color:#000;
+    background:#FFBCA3;
+    padding:10px 20px;
+    font-size:12px;
+    text-decoration:none;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+  
+  .btn:hover{
+    border:none;
+    background:#fff;
+    padding:20px 20px; #000;
+    color:#1b1b1b;
+  }
+
+.section-portfolio{
+    font-family: 'Oswald', sans-serif;
+    min-height: 100vh;
+    margin: 20px 80px 0px 80px;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+.section-socialmedia{
+    bottom: 24px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+ul{
+    list-style: none;
+    padding-left: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    padding-top: 24px;
+}
+
+.icon img{
+    width: 100%;
+    height: auto;
+}
+
+#aboutme{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.intro{
+  padding: 10px;
+  text-align: justify;
+}
+
+.vl{
+  border-left: 3px solid #706B69;
+  height: 400px;
+  margin: 20px;
+  writing-mode: vertical-rl;
+  text-align: initial;
+  font-size: 40px;
+  line-height: 1;
+  white-space: pre;
+}
+
+.hl{
+  border-bottom: 3px solid  #706B69;
+  width: 600px;
+  display: inline-flex;
+}
+
+.portrait img{
+  width: 400px;
+  padding: 40px 10px;
+  border-radius: 50%;
+}
+
+#projects{
+  padding: 100px;
+  margin: 100px;
+}
+
+#contact{
+  padding: 100px;
+  margin: 100px;
+}
+
+.content{
+  padding: 10px;
+  margin: 10px;
+}
+
+.email{
+    position: fixed;
+    width: auto;
+    bottom: 24px;
+    writing-mode: vertical-rl;
+    right: 0;
+    height: 100%;
+    text-align: end;
+    margin-right: 5px;
+  }
+
+  footer{
+    padding: 0px 100px;
+    height: 100px;
+  }
+
+.fa {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 90%;
+    font-size: 25px !important;
+  }
+
+.fa:hover {
+    border:none;
+    background:#fff;
+    padding:20px 20px; #000;
+    color:#1b1b1b;
+}
+
+.fa-linkedin {
+  background: #706B69;
+  color: white;
+}
+
+.fa-github{
+  background-color: #706B69;
+  color: white;
+}
