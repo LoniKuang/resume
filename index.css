@@ -1,3 +1,12 @@
+@media screen and (min-width:375px) and (max-width:768px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
 * {
 	-webkit-transition-property: all;
 	-webkit-transition-duration: .2s;
@@ -26,6 +35,7 @@ h2{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .bigheading{
@@ -89,6 +99,7 @@ ul{
   display: flex;
   padding: 10px;
   align-items: center;
+  flex-wrap: wrap-reverse;
 }
 
 .intro{
@@ -174,3 +185,4 @@ ul{
   background-color: #706B69;
   color: white;
 }
+
