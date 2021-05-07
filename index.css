@@ -131,14 +131,9 @@ ul{
   height: auto;
 }
 
-#projects{
-  padding: 100px;
-  margin: 100px;
-}
-
-#contact{
-  padding: 100px;
-  margin: 100px;
+#projects, #contact{
+  padding: 100px 0px;
+  margin: 100px 0px;
 }
 
 .content{
@@ -158,8 +153,8 @@ ul{
   }
 
   footer{
-    padding: 0px 100px;
-    height: 100px;
+    padding: 0px 100px 10px 100px;
+    height: 80px;
     flex-wrap: wrap;
   }
 
@@ -193,10 +188,37 @@ ul{
   #aboutme {
     flex-wrap: wrap-reverse;
   }
+  .vl {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hl{
+    width: 300px;
+  }  
+}
+
+@media screen and (max-width: 590px) { 
+  footer {
+    padding: 0px 10px 10px 10px;
+    display: grid;
+  }
+  #myTopnav{
+    display: none
+  }
+  .header {
+    padding: 0px 50px;
+  }
+  .header a.menubar{
+    float: right;
+    display: block;
+    color: #706B69;
+  }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 637px) {
+@media screen and (max-width: 590px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -210,59 +232,22 @@ ul{
   }
 }
 
-
-@media screen and (max-width: 683px) {
-  #aboutme {
-    flex-wrap: wrap-reverse;
-  }
-  .vl {
-    display: none;
-  }
-  body .hl {
-    width: 300px;
-  }
-  #projects, #contact{
-    padding: 0;
-  }  
-}
-
-@media screen and (max-width:637px) { 
-  /* for screens < 637px wide */
-  nav{display:none}
+@media screen and (max-width:516px) {
   .header {
-    padding: 0px 50px;
+    padding: 0px 10px;
+    }
+  .bigheading{
+    letter-spacing: 10px;
   }
-  .header a.menubar{
-    float: right;
-    display: block;
-    color: #706B69;
+  .section-portfolio {
+    margin: auto;
+    width: 90;
   }
 }
 
 /* for mobile phones */
-@media screen and (max-width:365px){
-  .bigheading{
-    letter-spacing: 10px;
-  }
-  .header {
-    padding: 0px 10px;
-  }
+@media screen and (max-width:500px){
   .section-socialmedia, .email {
     display: none;
-  }
-  .section-portfolio {
-    margin: 0px;
-    width: 100%;
-  }
-  #projects, #contact {
-    padding: 0px;
-    margin: 100px 0px 100px 0px
-  }
-  footer {
-    padding: 0px 10px;
-  }
-  footer {
-    padding: 0px 10px;
-    display: grid;
   }
 }
