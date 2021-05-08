@@ -26,7 +26,7 @@ h2{
 }
 
 .header{
-  padding: 0px 100px;
+  padding: 10px 100px;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -124,7 +124,7 @@ ul{
   display: inline-flex;
 }
 
-.portrait {
+.portrait img {
   padding: 40px 10px;
   border-radius: 50%;
   width: 100%;
@@ -184,22 +184,48 @@ ul{
 }
 
 
-@media screen and (max-width: 967px) {
+@media screen and (min-width: 595px) and (max-width: 967px) {
   #aboutme {
     flex-wrap: wrap-reverse;
   }
-  .vl {
-    display: none;
+  .portrait {
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 700px) {
+  .vl {
+    height: 300px;
+  }
   .hl{
     width: 300px;
   }  
 }
 
-@media screen and (max-width: 590px) { 
+@media screen and (max-width: 595px) { 
+  .header {
+    padding: 0px 50px;
+  }
+  .bigheading {
+    font-size: 30px;
+  }
+  .header a.menubar{
+    float: right;
+    display: block;
+    color: #706B69;
+  }
+  #aboutme {
+    flex-wrap: wrap-reverse;
+  }
+  .portrait {
+    width: 80%;
+  }
+  .section-portfolio {
+    margin: 20px 50px 0px 50px;
+  }
+  .vl {
+    margin: 0px;
+  }
   footer {
     padding: 0px 10px 10px 10px;
     display: grid;
@@ -207,18 +233,10 @@ ul{
   #myTopnav{
     display: none
   }
-  .header {
-    padding: 0px 50px;
-  }
-  .header a.menubar{
-    float: right;
-    display: block;
-    color: #706B69;
-  }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 595px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -232,22 +250,31 @@ ul{
   }
 }
 
-@media screen and (max-width:516px) {
+@media screen and (max-width:538px) {
   .header {
-    padding: 0px 10px;
+    width: auto;
+    justify-content: space-between;
     }
   .bigheading{
     letter-spacing: 10px;
   }
   .section-portfolio {
     margin: auto;
-    width: 90;
+    width: 90%;
+  }
+  .section-socialmedia, .email {
+    display: none;
   }
 }
 
-/* for mobile phones */
-@media screen and (max-width:500px){
-  .section-socialmedia, .email {
-    display: none;
+@media screen and (max-width: 400px) {
+  .bigheading {
+    letter-spacing: 5px;
+  }
+  .header {
+    padding: 0px 20px;
+  }
+  #aboutme {
+    padding: 0px;
   }
 }
